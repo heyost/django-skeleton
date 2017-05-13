@@ -3,6 +3,7 @@ django-environ
 colorlog
 django-hosts
 django-debug-toolbar
+django_compressor
 
 # Optional Integrations
 oauth2client
