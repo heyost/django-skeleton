@@ -93,6 +93,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_hosts',
+    'compressor',
 
     'project.utils',
     'app',
@@ -176,6 +177,16 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     path('static')
 ]
+
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    # other finders..
+    'compressor.finders.CompressorFinder',
+)
+
+COMPRESS_ROOT = path('cache')
+COMPRESS_ENABLED = True
 
 
 # Uploaded files
