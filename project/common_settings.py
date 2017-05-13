@@ -96,7 +96,6 @@ INSTALLED_APPS = [
 
     'project.utils',
     'app',
-    'oauth',
 ]
 
 MIDDLEWARE = [
