@@ -1,0 +1,21 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+#
+#  mdfjr - manage.py
+#
+#  Created by PyCharm.
+#  User: fajar
+#  Date: 5/13/17
+#  Time: 3:50 PM
+#
+#
+
+import os
+import sys
+
+if __name__ == "__main__":
+    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "project.settings")
+
+    from django.core.management import execute_from_command_line
+
+    execute_from_command_line(sys.argv)
