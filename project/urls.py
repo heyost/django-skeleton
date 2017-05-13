@@ -10,7 +10,8 @@
 #
 #
 
-"""URL Configuration
+"""
+URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/1.10/topics/http/urls/
@@ -36,9 +37,7 @@ from app import urls
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-
-    # Uncomment for oauth support
-    #url(r'^oauth/', include("oauth.urls")),
+    url(r'^oauth/', include("oauth.urls")),
 
     # Auth urls
     url(r'^accounts/login$', django.contrib.auth.views.login,
