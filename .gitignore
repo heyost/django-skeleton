@@ -88,3 +88,5 @@ celerybeat-schedule
 venv/
 /.env
 /cache/CACHE/
+/node_modules/
+/assets/vendor/

@@ -1,0 +1,23 @@
+{
+  "name": "mdfjr",
+  "description": "Django dependencies",
+  "main": "",
+  "authors": [
+    "Muhamad Fajar <therevance@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "http://mdjfr.xyz",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bulma": "^0.4.1",
+    "velocity": "^1.5.0",
+    "components-font-awesome": "^4.7.0"
+  }
+}

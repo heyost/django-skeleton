@@ -49,6 +49,10 @@ new or existing project.
 
    If some C extension modules depend on other libraries, you may need to
    install development headers for those as well.
+   
+   Install development package
+    - `npm install`
+    - `bower install`
 
 4. Create your .env ([dotenv](project#the-dotenv-convention)) file
 

@@ -172,21 +172,30 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = '/assets/'
 
 STATICFILES_DIRS = [
-    path('static')
+    path('assets')
 ]
+
+STATIC_ROOT = path('collectstatic')
 
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+
     # other finders..
     'compressor.finders.CompressorFinder',
 )
 
 COMPRESS_ROOT = path('cache')
+COMPRESS_OUTPUT_DIR = 'dist'
 COMPRESS_ENABLED = True
+COMPRESS_PRECOMPILERS = (
+    ('text/stylus', 'node_modules/.bin/stylus < {infile} > {outfile}'),
+)
+COMPRESS_CSS_FILTERS = ['compressor.filters.css_default.CssAbsoluteFilter',  'compressor.filters.cssmin.CSSMinFilter']
+COMPRESS_JS_FILTERS = ['compressor.filters.jsmin.JSMinFilter']
 
 
 # Uploaded files

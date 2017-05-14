@@ -2,12 +2,14 @@
   <dictionary name="fajar">
     <words>
       <w>authbackend</w>
+      <w>bulma</w>
       <w>collectstatic</w>
       <w>howto</w>
       <w>loginform</w>
       <w>mdfjr</w>
       <w>oauthuser</w>
       <w>openidconnect</w>
+      <w>styl</w>
       <w>wsgi</w>
     </words>
   </dictionary>
